@@ -12,9 +12,10 @@ TSAcad-Frontend-Development/
 │   │   ├── index.html
 │   │   ├── about.html
 │   │   └── contact.html
-│   └── exercise-3/             # Products page, nested menus, file download
-│       ├── products.html
-│       └── IT Hardware Brochure.pdf
+│   ├── exercise-3/             # Products page, nested menus, file download
+│   │   ├── products.html
+│   │   └── IT Hardware Brochure.pdf
+│   └── screenshots/
 └── Task-One/                   # Come Again Restaurant menu page
     ├── index.html
     └── screenshots/
@@ -29,6 +30,20 @@ TSAcad-Frontend-Development/
 | [Exercise 1](Practice/exercise1.html) | My Favourite Foods | Headings, unordered lists (`<ul>`), ordered lists (`<ol>`), definition lists (`<dl>`), external links |
 | [Exercise 2](Practice/exercise-2/index.html) | Multi-page Website | Linking pages with relative paths, `<nav>`, `aria-current`, breadcrumbs, in-page anchor links, `mailto:` and `tel:` links, `<main>`, `<section>`, `<footer>` |
 | [Exercise 3](Practice/exercise-3/products.html) | Products Page | Nested navigation menus, accessible navigation with `aria-label`, linking across folders, downloadable files (PDF) |
+
+#### Practice Screenshots
+
+**Exercise 2: About page**
+
+![Exercise 2 about page](Practice/screenshots/Exercise-2-about-page.png)
+
+**Exercise 2: Contact page**
+
+![Exercise 2 contact page](Practice/screenshots/Exercise-2-contact-page.png)
+
+**Exercise 3: Products page**
+
+![Exercise 3 products page](Practice/screenshots/Exercise-3-product-page.png)
 
 ### Tasks
 
