@@ -16,8 +16,11 @@ TSAcad-Frontend-Development/
 │   │   ├── products.html
 │   │   └── IT Hardware Brochure.pdf
 │   └── screenshots/
-└── Task-One/                   # Come Again Restaurant menu page
-    ├── index.html
+├── Task-One/                   # Come Again Restaurant menu page
+│   ├── index.html
+│   └── screenshots/
+└── Task-Two/                   # Secondary school weekly timetable
+    ├── timetable.html
     └── screenshots/
 ```
 
@@ -50,11 +53,39 @@ TSAcad-Frontend-Development/
 | Task | Project | Description |
 |------|---------|-------------|
 | [Task One](Task-One/index.html) | Come Again Restaurant | A restaurant menu page using nested ordered and unordered lists, with `<strong>` and `<em>` for text emphasis |
+| [Task Two](Task-Two/timetable.html) | School Timetable | A weekly timetable for a secondary school, built with HTML tables only (no CSS) |
 
 #### Task One Screenshots
 
 ![Task One page](Task-One/screenshots/Task-one-index-html.png)
 ![Come Again Restaurant](Task-One/screenshots/Task-one-welcome-again-restaurant.png)
+
+#### Task Two: School Timetable
+
+The brief was to build a timetable for a secondary school using only HTML:
+
+- 6 classes (JS 1 to SS 3), each with two arms (A and B), so 12 class rows per day
+- 8 periods a day
+- 1 hour per period from Monday to Thursday, and 40 minutes per period on Friday
+- Both arms of a class take Mathematics and English together, but other subjects separately
+- Mathematics and English hold 4 times a week for each class, with at least one double period
+- Arrival, Breakfast, and Lunch are shared by the whole school
+
+How I built it:
+
+- `<table>`, `<caption>`, `<thead>`, and `<tbody>` give the table its structure, and `<th scope="col">` / `<th scope="row">` mark the headers
+- `rowspan="2"` joins the two arms of a class into one cell for their joint Mathematics and English lessons
+- `colspan="2"` turns one lesson into a double period
+- `rowspan="12"` stretches the day name, Arrival, Breakfast, and Lunch down all 12 class rows
+- `border`, `cellspacing`, and `cellpadding` style the table without CSS
+
+| Monday | Tuesday | Wednesday |
+|--------|---------|-----------|
+| ![Monday](Task-Two/screenshots/monday.png) | ![Tuesday](Task-Two/screenshots/tuesday.png) | ![Wednesday](Task-Two/screenshots/wednesday.png) |
+
+| Thursday | Friday |
+|----------|--------|
+| ![Thursday](Task-Two/screenshots/thursday.png) | ![Friday](Task-Two/screenshots/Friday.png) |
 
 ## Skills Covered So Far
 
@@ -64,6 +95,7 @@ TSAcad-Frontend-Development/
 - [x] Hyperlinks: external, relative, in-page anchors, email, phone, and file downloads
 - [x] Semantic HTML (`<nav>`, `<main>`, `<section>`, `<footer>`)
 - [x] Basic accessibility (`aria-label`, `aria-current`)
+- [x] HTML tables (`<table>`, `<caption>`, `<thead>`, `<tbody>`, `<th scope>`, `rowspan`, `colspan`)
 - [ ] CSS
 - [ ] Responsive design
 - [ ] JavaScript
